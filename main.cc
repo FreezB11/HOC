@@ -1,10 +1,20 @@
-#include "lib/log.hh"
+// here the server code lys 
+// purpose of this server accept connections 
+// recv data to store em
 
-int main(){
-    io::log<ERROR>("this is fucked");
-    io::log<DEBUG>("the debug test");
+#include "./src/hoc.h++"
+// #define main int main()
 
-    io::log<INFO>("this is the test");
-    io::log<WARN>("this is the test");
+int HOC_S::main(){
+
+    /*
+        the code here will be to start the server and provide the user
+        a link or smtg of sort so that he can pass to the connect function 
+        and connect to the db.
+    */
+    // HOC_S::server_s = socket(AF_INET , SOCK_STREAM, 0);
+    bind(HOC_S::server_s, (struct sockaddr*)&HOC_S::addr_s, sizeof(HOC_S::addr_s));
+    
+
 }
 
