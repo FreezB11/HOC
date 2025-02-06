@@ -13,8 +13,8 @@ int HOC_S::main(){
         and connect to the db.
     */
     // HOC_S::server_s = socket(AF_INET , SOCK_STREAM, 0);
-    bind(HOC_S::server_s, (struct sockaddr*)&HOC_S::addr_s, sizeof(HOC_S::addr_s));
+    // bind(HOC_S::server_s, (struct sockaddr*)&HOC_S::addr_s, sizeof(HOC_S::addr_s));
     
-
+    return 0;
 }
 
