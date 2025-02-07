@@ -1,9 +1,9 @@
 CC = g++ -std=c++20
-OUT = HOC
-FILES =  src/*.c++ lib/*.h
+OUT = build/HOC
+FILES =  src/*.c++ lib/*.cc
 
 all:
 	${CC} -o ${OUT} main.cc ${FILES} 
 
 client:
-	${CC} -o client client.cc ${FILES}
+	${CC} -o build/client client.cc ${FILES}

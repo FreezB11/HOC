@@ -1,5 +1,5 @@
     #include "../lib/timer.hh"
-    #include "../lib/log.h"
+    #include "../lib/log.hh"
     // #pragma once 
 
     #define _XOPEN_SOURCE_EXTENDED 1
@@ -27,15 +27,8 @@
     // server side
     namespace HOC_S{
 
-        int server_port = 3142;
-        int server_s = socket(AF_INET , SOCK_STREAM, 0);
-
-        sockaddr_in addr_s = {
-            .sin_family = AF_INET,
-            .sin_port = htons(server_port),
-            .sin_addr = {
-                .s_addr = INADDR_ANY
-                },
-        };
+        extern int server_port;
+        extern int server_s;
+        extern sockaddr_in addr_s;
         int _listen();
     }

@@ -5,7 +5,7 @@
 #include "./src/hoc.h++"
 // #define main int main()
 
-int HOC_S::main(){
+int main(){
 
     /*
         the code here will be to start the server and provide the user
