@@ -1,0 +1,2 @@
+{ age: 26, name: alice,  }
+{ age: 30, name: yash,  }
