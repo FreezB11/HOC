@@ -106,7 +106,7 @@ namespace io{
 
     // Convert to a readable format
     extern std::tm* localTime; //= std::localtime(&currentTime);
-    #define tlog(x,col) std::cout << YEL<< "["<<std::put_time(localTime, "%Y-%m-%d %H:%M:%S") << "] "<< CRESET col << x << CRESET<< std::endl;
+    #define tlog(x,col) std::cout << GRN<< "["<<std::put_time(localTime, "%Y-%m-%d %H:%M:%S") << "] "<< CRESET col << x << CRESET<< std::endl;
 
     #define ERROR 404
     #define INFO 99
